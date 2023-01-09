@@ -9,6 +9,7 @@ jobs:
     steps:
       - checkout
       - run: echo "Hello world"
+      - run: echo $DOCKERHUB_PASSWORD
 workflows:
   my-workflow:
     jobs:
